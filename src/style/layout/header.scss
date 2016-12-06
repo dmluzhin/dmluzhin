@@ -1,0 +1,21 @@
+header, .header {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: $gr900;
+  @include background-cover;
+  color: $white
+}
+nav, .navigation {
+  width: 100%;
+  height: 100px;
+  background-color: transparent;
+}
+.navigation {
+  &-list {
+    @include flex-row;
+  }
+  .container {
+    height: 100%;
+  }
+}

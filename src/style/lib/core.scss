@@ -1,0 +1,15 @@
+.flex-row {
+  @include flex-row;
+}
+.flex-center {
+  @include flex-center;
+}
+.flex-column {
+  @include flex-column;
+}
+.flex-space-between {
+  @include flex-space-between;
+}
+.flex-space-around {
+  @include flex-space-around;
+}

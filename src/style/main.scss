@@ -1,5 +1,5 @@
 /*Lib*/
-@import "lib/reset", "lib/varibles", "lib/mixins";
+@import "lib/reset", "lib/varibles", "lib/mixins", "lib/core", "lib/grid";
 
 /*Layout*/
-@import "layout/navigation", "layout/content", "layout/footer";
+@import "layout/header", "layout/content", "layout/footer";
