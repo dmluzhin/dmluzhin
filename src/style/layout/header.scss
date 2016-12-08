@@ -3,6 +3,7 @@ header, .header {
   width: 100%;
   height: 100vh;
   background-color: $gr900;
+  background-image: url("../images/jpg/backgrounds/material-bg.jpg");
   @include background-cover;
   color: $white
 }
@@ -17,5 +18,17 @@ nav, .navigation {
   }
   .container {
     height: 100%;
+  }
+}
+
+.round-avatar {
+  width: 200px;
+  height: 200px;
+  border-radius: $radius-dp100;
+  overflow: hidden;
+  box-shadow: $shadow-dp1;
+
+  &-sign {
+    margin-top: $main-step;
   }
 }
