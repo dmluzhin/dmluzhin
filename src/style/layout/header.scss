@@ -1,11 +1,12 @@
 header, .header {
   position: relative;
   width: 100%;
-  height: 100vh;
+  /*height: 100vh;*/
   background-color: $gr900;
   background-image: url("../images/jpg/backgrounds/material-bg.jpg");
   @include background-cover;
-  color: $white
+  color: $white;
+  padding-bottom: 40px;
 }
 nav, .navigation {
   width: 100%;
@@ -13,9 +14,20 @@ nav, .navigation {
   background-color: transparent;
 }
 .logo {
-  font-size: 1.625rem;
+  display: block;
+  font-size: 2rem;
   text-transform: uppercase;
   letter-spacing: 2px;
+  color: $white;
+  transition: $ease-25;
+  @extend %semibold;
+  margin-left: $big-step + 10px;
+  &:hover {
+    color: $white;
+  }
+  @media screen and (max-width: 768px) {
+    margin-left: $big-step;
+  }
 }
 .navigation {
   &-list {
@@ -54,12 +66,22 @@ nav, .navigation {
       }
 
     }
+
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
   }
   .container {
     height: 100%;
   }
 }
-
+.card {
+  /*width: 100%;
+  max-width: 400px;
+  border-radius: $radius-dp-1;
+  background-color: $gr100;
+  box-shadow: $shadow-dp1;*/
+}
 .round-avatar {
   width: 200px;
   height: 200px;
@@ -67,6 +89,7 @@ nav, .navigation {
   overflow: hidden;
   box-shadow: $shadow-dp1;
   margin-top: $big-step;
+  border: 6px solid $white;
 
   &-sign {
     margin-top: $middle-step;
@@ -77,8 +100,15 @@ nav, .navigation {
   }
   &-profile {
     margin-top: $main-step;
+    color: $white;
   }
   &-works {
     margin-top: $main-step;
+    color: $white;
+  }
+  &-buttons {
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+    }
   }
 }

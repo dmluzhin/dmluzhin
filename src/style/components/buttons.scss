@@ -28,4 +28,48 @@ button, .button {
       background-color: lighten($black-200, 5%);
     }
   }
+  @media screen and (max-width: 768px) {
+    margin: 15px 0 0 0;
+  }
+}
+.hamburger {
+  position: absolute;
+  left: 0; top: 0; bottom: 0;
+  margin: auto;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  box-sizing: content-box;
+  padding: 10px;
+  border-radius: $radius-dp100;
+  transition: $ease-25;
+
+  &:hover {
+    background-color: $red-200;
+  }
+
+  .line {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background-color: $white;
+    margin: 4px auto;
+    transition: all .15s ease-in-out;
+    &:first-child {
+      margin-top: 5px;
+    }
+  }
+  &.is-active {
+    .line {
+      &:nth-child(1) {
+        transform: translateY(6px) rotate(45deg);
+      }
+      &:nth-child(2) {
+        opacity: 0;
+      }
+      &:nth-child(3) {
+        transform: translateY(-6px) rotate(-45deg);
+      }
+    }
+  }
 }
