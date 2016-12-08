@@ -39,6 +39,8 @@ $standart-box-padding: 32px;
 
 /*Margins*/
 $main-step: 10px;
+$middle-step: 25px;
+$big-step: 40px;
 /*Fonts*/
 $sans-serif: Arial, Helvetica, sans-serif;
 $serif: "Times New Roman", Times, serif;
@@ -64,3 +66,6 @@ $shadow-dp4: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12),
 $radius-dp100: 100%;
 $radius-dp-1: 3px;
 $radius-dp-2: 6px;
+
+/*Transitions*/
+$ease-25: all ease .25s;

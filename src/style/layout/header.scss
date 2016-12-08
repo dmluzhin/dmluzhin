@@ -12,9 +12,48 @@ nav, .navigation {
   height: 100px;
   background-color: transparent;
 }
+.logo {
+  font-size: 1.625rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
 .navigation {
   &-list {
+    position: relative;
     @include flex-row;
+    margin: 0;
+    padding: 0;
+    li {
+      margin: 0 .0125rem;
+    }
+    li a {
+      color: $white;
+      @extend %regular;
+      padding: $standart-nav-padding;
+      font-size: .925rem;
+      text-transform: uppercase;
+      position: relative;
+      transition: $ease-25;
+
+      &:before, &:after {
+        content: '';
+        width: 100%;
+        height: 1px;
+        position: absolute;
+        bottom: 0; left: 0; right: 0;
+        margin: auto;
+        background-color: transparent;
+      }
+      &:after {
+        background-color: $white;
+        transition: max-width 0.15s ease;
+        max-width: 0;
+      }
+      &:hover:after {
+        max-width: 100%;
+      }
+
+    }
   }
   .container {
     height: 100%;
@@ -27,8 +66,19 @@ nav, .navigation {
   border-radius: $radius-dp100;
   overflow: hidden;
   box-shadow: $shadow-dp1;
+  margin-top: $big-step;
 
   &-sign {
+    margin-top: $middle-step;
+    color: $white;
+    text-transform: uppercase;
+    @extend %semibold;
+    font-size: 2.125rem;
+  }
+  &-profile {
+    margin-top: $main-step;
+  }
+  &-works {
     margin-top: $main-step;
   }
 }

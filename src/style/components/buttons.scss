@@ -1,0 +1,31 @@
+button, .button {
+  display: block;
+  box-shadow: $shadow-dp1;
+  font-size: 1rem;
+  text-transform: uppercase;
+  @extend %semibold;
+  border-radius: $radius-dp-1;
+  color: $white;
+  background-color: $blue;
+  padding: 1rem;
+  margin: $main-step+10px $main-step - 5px;
+  text-align: center;
+  min-width: 160px;
+  will-change: box-shadow, transform;
+  transition: box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1), background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1), color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    transition: $ease-25;
+    box-shadow: $shadow-dp3;
+    background-color: $blue-200;
+    color: $white;
+  }
+  &:active {
+    box-shadow: $shadow-dp1;
+  }
+  &.secondary {
+    background-color: $black-200;
+    &:hover {
+      background-color: lighten($black-200, 5%);
+    }
+  }
+}

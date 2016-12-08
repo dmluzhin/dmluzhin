@@ -51,10 +51,11 @@ body {
 }
 a {
   background: transparent;
-  color: #2A88C7;
+  color: $base-blue;
   text-decoration: none;
   &:hover {
-    color: #1976D2;
+    color: $blue-200;
+    transition: $ease-25;
   }
 }
 *:focus,

@@ -1,5 +1,8 @@
 /*Lib*/
-@import "lib/reset", "lib/varibles", "lib/mixins", "lib/core", "lib/grid";
+@import "lib/varibles", "lib/reset", 'layout/typography',  "lib/mixins", "lib/core", "lib/grid";
 
 /*Layout*/
 @import "layout/header", "layout/content", "layout/footer";
+
+/*Components*/
+@import "components/buttons";
