@@ -1,8 +1,33 @@
+section {
+  @media screen and (min-width: 1024px) {
+    min-height: 600px;
+    padding: 100px 0;
+  }
+}
+.bg-primary {
+
+  background-color: $gr100;
+
+  &-red {
+    background-color: $base-red;
+  }
+  &-blue {
+    background-color: $base-blue;
+  }
+  &-black {
+    background-color: $base-black;
+  }
+} .bg-secondary {
+    background-color: $gr300;
+  }
 .flex-row {
   @include flex-row;
 }
 .flex-center {
   @include flex-center;
+}
+.flex-left {
+  @include flex-left;
 }
 .flex-column {
   @include flex-column;

@@ -7,6 +7,7 @@ header, .header {
   @include background-cover;
   color: $white;
   padding-bottom: 40px;
+  padding-top: 100px;
 }
 nav, .navigation {
   width: 100%;
@@ -21,12 +22,11 @@ nav, .navigation {
   color: $white;
   transition: $ease-25;
   @extend %semibold;
-  margin-left: $big-step + 10px;
   &:hover {
     color: $white;
   }
-  @media screen and (max-width: 768px) {
-    margin-left: $big-step;
+  @media screen and (max-width: 1024px) {
+    margin-left: $big-step + 10px;
   }
 }
 .navigation {
@@ -67,12 +67,27 @@ nav, .navigation {
 
     }
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1024px) {
       display: none;
     }
   }
   .container {
     height: 100%;
+  }
+}
+.navbar {
+  position: fixed;
+  top:0; left: 0;
+  width: 100%;
+  background-color: transparent;
+  z-index: 1000;
+  overflow: hidden;
+  transition: all .15s;
+
+  &.fixed-navbar {
+    height: 60px;
+    background-color: $base-blue;
+    box-shadow: $shadow-dp3;
   }
 }
 .card {

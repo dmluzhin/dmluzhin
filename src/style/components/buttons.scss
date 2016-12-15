@@ -33,6 +33,7 @@ button, .button {
   }
 }
 .hamburger {
+  display: none;
   position: absolute;
   left: 0; top: 0; bottom: 0;
   margin: auto;
@@ -46,6 +47,10 @@ button, .button {
 
   &:hover {
     background-color: $red-200;
+  }
+
+  @media screen and (max-width: 1024px) {
+    display: block;
   }
 
   .line {

@@ -1,0 +1,6 @@
+/*Header shrink*/
+@keyframes shrink {
+  from {box-shadow: $shadow-dp1;}
+  50% {box-shadow: $shadow-dp2;}
+  to {box-shadow: $shadow-dp3;}
+}
