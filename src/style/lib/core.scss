@@ -1,4 +1,6 @@
 section {
+  min-height: 400px;
+  padding: 60px 0;
   @media screen and (min-width: 1024px) {
     min-height: 600px;
     padding: 100px 0;
@@ -17,9 +19,10 @@ section {
   &-black {
     background-color: $base-black;
   }
-} .bg-secondary {
+}
+.bg-secondary {
     background-color: $gr300;
-  }
+}
 .flex-row {
   @include flex-row;
 }
