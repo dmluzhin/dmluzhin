@@ -178,7 +178,7 @@ h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   @extend %bold;
   color: $heading-text-color;
-  margin: 1em auto 0.25em auto;
+  margin: 1em auto 0.75em auto;
   max-width: $paragraph-width;
   font-weight: normal;
 }
@@ -318,4 +318,17 @@ figure {
 }
 .no-margin {
   margin: 0;
+}
+
+.align-left {
+  text-align: left;
+}
+.align-right {
+  text-align: right;
+}
+.align-center {
+  text-align: center;
+}
+.align-justify {
+  text-align: justify;
 }
