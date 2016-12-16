@@ -1,0 +1,19 @@
+.divider {
+  width: 100%;
+  max-width: 100%;
+  height: 300px;
+  box-shadow: $shadow-dp1;
+  background-color: $base-red;
+  padding: $standart-box-padding;
+  color: $white;
+  border-radius: $radius-dp-1;
+  transition: $transition-15ms;
+  margin-bottom: 30px;
+  text-align: center;
+  &:hover {
+    box-shadow: $shadow-dp3;
+  }
+  h6 {
+    color: $white;
+  }
+}

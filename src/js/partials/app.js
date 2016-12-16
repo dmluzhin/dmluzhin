@@ -19,7 +19,7 @@ $(document).ready(function() {
 			$(this).closest('a').addClass("active");
 
 			$('html, body').stop().animate({
-				scrollTop: $( $(this).attr('href') ).offset().top - 160 }, 250);
+				scrollTop: $( $(this).attr('href') ).offset().top - 50 }, 250);
 
 			return false
 		});

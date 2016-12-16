@@ -188,13 +188,15 @@ h2, .h2 {font-size: 3.25rem;}
 h3, .h3 {font-size: 2.5625rem;}
 h4, .h4 {font-size: 2rem;}
 h5, .h5 {font-size: 1.525rem;}
-h6, .h6 {font-size: 1.25rem;}
+h6, .h6 {font-size: 1.25rem; @extend %regular}
 
 p {
   max-width: $paragraph-width;
   margin: 0 auto;
-  text-align: justify;
+  text-align: left;
+  line-height: 1.5;
   hyphens: auto; //расстановка переносов
+
 
   & + & {
     margin-top: 1.5em; //Добавляет отступ к последующим параграфам
