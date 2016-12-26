@@ -19,3 +19,117 @@
     font-size: .85rem;
   }
 }
+
+.stats {
+
+  &-container {
+    width: 100%;
+    margin-top: 16px;
+    background-color: $white;
+    padding: $standart-box-padding;
+    padding-bottom: 0;
+
+    .row {
+      margin: 0 auto;
+      max-width: 1200px;
+      height: 480px;
+      align-items: flex-end;
+      overflow: visible;
+      flex-grow: 1;
+    }
+
+    .stat {
+      display: flex;
+      flex-grow: 1;
+      position: relative;
+      background-color: $red-200;
+      box-shadow: $shadow-dp2;
+      border-radius: $radius-dp-1 $radius-dp-1 0 0;
+      z-index: 2;
+      transition: all ease .25s;
+      &:hover {
+        box-shadow: $shadow-dp4;
+        z-index: 4;
+      }
+
+      &-count {
+        position: absolute;
+        bottom: -58px;
+        left: 0; right: 0;
+        margin: auto;
+        background-color: white;
+        width: 100%;
+        height: 60px;
+        border-radius: $radius-dp-1;
+        z-index: 1;
+        box-shadow: $shadow-dp1;
+        @extend %regular;
+        color: $red;
+        font-size: 1.6rem;
+      }
+
+      &-name {
+        position: absolute;
+        width: 100%;
+        height: 35px;
+        bottom: 0;
+        left: 0;
+        padding: 8px 0;
+        text-align: center;
+        span {
+          text-transform: uppercase;
+          font-size: 1.2rem;
+          color: $white;
+          @extend %light;
+        }
+      }
+      &-img {
+        width: 80px;
+        height: auto;
+        min-height: 50px;
+
+        svg {
+          fill: $gr100 !important;
+        }
+        .gr100-fill {
+          fill: $gr100 !important;
+        }
+        .gr200-fill {
+          fill: $gr200 !important;
+        }
+        .gr300-fill {
+          fill: $gr300 !important;
+        }
+        .gr400-fill {
+          fill: $gr400 !important;
+        }
+        .gr900-fill {
+          fill: $gr900 !important;
+        }
+        .red-fill {
+          fill: $red !important;
+        }
+        .transparent-fill {
+          fill: transparent !important;
+        }
+      }
+    }
+  }
+
+  &-box {
+    position: relative;
+    height: 100%;
+    align-items: flex-end;
+    flex-grow: 1;
+    transition: $transition-15ms;
+    &:hover {
+      flex-grow: 2;
+
+      .stat {
+        background-color: $red-400;
+      }
+    }
+  }
+
+
+}
