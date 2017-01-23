@@ -202,3 +202,108 @@
     }
   }
 }
+
+.jumbotron {
+  position: relative;
+  width: 100%;
+  max-width: 1920px;
+  height: 640px;
+  background-color: $blue;
+  overflow: hidden;
+
+  .circle {
+    &-x1, &-x2, &-x3, &-x4, &-x5 {
+      position: absolute;
+      border-radius: 100%;
+      animation: circle-scale 3s ease-in-out infinite alternate;
+      animation-timing-function: cubic-bezier(.6, 0, .4, 1);
+      animation-delay: 0s;
+      margin: auto;
+      box-shadow: $shadow-dp1;
+    }
+    &-x1 {
+      width: 300px; height: 300px;
+      top: 170px; left: -150px;
+      background-color: $white;
+      opacity: .4;
+      animation-delay: 0s;
+    }
+    &-x2 {
+      width: 600px; height: 600px;
+      top: 20px; left: -300px;
+      background-color: $white;
+      opacity: .3;
+      animation-delay: .3s;
+    }
+    &-x3 {
+      width: 900px; height: 900px;
+      top: -130px; left: -450px;
+      background-color: $white;
+      opacity: .2;
+      animation-delay: .6s;
+    }
+    &-x4 {
+      width: 1200px; height: 1200px;
+      top: -280px; left: -600px;
+      background-color: $white;
+      opacity: .1;
+      animation-delay: .9s;
+    }
+    &-x5 {
+      width: 1500px; height: 1500px;
+      top: -430px; left: -750px;
+      background-color: $white;
+      opacity: .05;
+      animation-delay: 1.2s;
+    }
+  }
+}
+.avatar {
+  display: block;
+  margin: 0 auto;
+  padding: 4px;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 100%;
+  background-color: $white;
+  border: 1px solid $gr100;
+}
+.blog-slider {
+  position: absolute !important;
+  right: 0; left: 0;
+  top: 0; bottom: 0;
+  margin: auto;
+  width: 100%;
+  max-width: 1200px;
+  height: 450px;
+  padding: 32px;
+  cursor: grab;
+
+  .blockquote-text {
+    background-color: transparent;
+    padding: 0;
+    text-align: center;
+
+    h1 {
+      text-align: center;
+    }
+    p {
+      color: $white;
+      margin-top: 16px;
+    }
+  }
+}
+
+@keyframes circle-scale {
+  0% {
+    transform: scale(1.0);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+.nopadding {
+  padding: 0;
+}

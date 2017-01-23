@@ -78,3 +78,29 @@ button, .button {
     }
   }
 }
+.slick-dots {
+  margin: 4px auto;
+  padding: 0;
+  text-align: center;
+}
+.slick-dots li {
+  display: inline-block;
+  margin: 4px auto;
+  text-align: center;
+}
+.slick-active button {
+  background-color: $white !important;
+}
+.slick-dots button {
+  display: inline-block;
+  width: 10px;
+  min-width: auto;
+  height: 10px;
+  border-radius: 100%;
+  box-shadow: none;
+  padding: 4px;
+  font-size: 0;
+  background-color: transparent;
+  border: 1px solid $white;
+  margin: 0 2px;
+}

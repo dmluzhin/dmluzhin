@@ -24,4 +24,14 @@ $(document).ready(function() {
 			return false
 		});
 	});
+
+	$('.blog-slider').slick({
+		mobileFirst: false,
+		slidesToShow: 1,
+		speed: 150,
+		infinite: true,
+		accessibility: false,
+		arrows: false,
+		dots: true
+	});
 });
