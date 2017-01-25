@@ -31,3 +31,10 @@
     repeat: no-repeat;
   };
 }
+@mixin background-center {
+  background:  {
+    position: center center;
+    size: 100%;
+    repeat: no-repeat;
+  };
+}

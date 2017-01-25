@@ -1,5 +1,5 @@
 button, .button {
-  display: block;
+  display: inline-block;
   box-shadow: $shadow-dp1;
   font-size: 1rem;
   text-transform: uppercase;
@@ -13,6 +13,7 @@ button, .button {
   min-width: 160px;
   will-change: box-shadow, transform;
   transition: box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1), background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1), color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  border: none;
   &:hover {
     transition: $ease-25;
     box-shadow: $shadow-dp3;
@@ -93,14 +94,20 @@ button, .button {
 }
 .slick-dots button {
   display: inline-block;
-  width: 10px;
+  width: 12px;
   min-width: auto;
-  height: 10px;
+  height: 12px;
   border-radius: 100%;
   box-shadow: none;
   padding: 4px;
   font-size: 0;
   background-color: transparent;
   border: 1px solid $white;
-  margin: 0 2px;
+  margin: 0 4px;
+  transition: $transition-15ms;
+
+  &:hover {
+    background-color: $white;
+    opacity: .8;
+  }
 }

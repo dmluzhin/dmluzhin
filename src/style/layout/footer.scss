@@ -1,7 +1,40 @@
 footer, .footer {
   width: 100%;
   background-color: $base-red;
-  min-height: 80px;
-  padding: $standart-box-padding;
-  color: $white
+  padding: 32px 0;
+  color: $white;
+
+  .copyright {
+    color: $white;
+
+    a {
+      color: $white;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .social-icons {
+    text-align: right;
+    margin: 0;
+
+    li {
+      display: inline-block;
+      vertical-align: top;
+      margin: 0 32px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      a {
+        color: $white;
+        font-size: 1.4rem;
+        &:hover {
+          color: $blue;
+        }
+      }
+    }
+  }
 }
