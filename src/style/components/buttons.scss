@@ -36,19 +36,18 @@ button, .button {
 .hamburger {
   display: none;
   position: absolute;
-  left: 0; top: 0; bottom: 0;
+  left: 20px; top: 0; bottom: 0;
   margin: auto;
   width: 24px;
   height: 24px;
   cursor: pointer;
   box-sizing: content-box;
   padding: 10px;
-  border-radius: $radius-dp100;
   transition: $ease-25;
 
-  &:hover {
+  /*&:hover {
     background-color: $red-200;
-  }
+  }*/
 
   @media screen and (max-width: 1024px) {
     display: block;

@@ -182,11 +182,14 @@ $standart-nav-padding:  .625rem;
 /*Elements'n'Tags*/
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
-  @extend %bold;
+  @extend %semibold;
   color: $heading-text-color;
   margin: 1em auto 0.75em auto;
   max-width: $paragraph-width;
   font-weight: normal;
+  @media screen and (max-width: 450px) {
+    text-align: center;
+  }
 }
 
 h1, .h1 {font-size: 4.0625rem;}

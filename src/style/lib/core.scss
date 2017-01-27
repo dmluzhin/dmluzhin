@@ -8,7 +8,7 @@ section {
 }
 .bg-primary {
 
-  background-color: $gr100;
+  background-color: $white;
 
   &-red {
     background-color: $base-red;
@@ -21,7 +21,7 @@ section {
   }
 }
 .bg-secondary {
-    background-color: $gr300;
+    background-color: $gr100;
 }
 .flex-row {
   @include flex-row;
@@ -64,3 +64,7 @@ section {
 .h95 {height: 95%;}
 .h97 {height: 97%;}
 .h100 {height: 100%;}
+
+.nopadding-top {
+  padding-top: 0;
+}
