@@ -85,6 +85,9 @@ nav, .navigation {
     padding: 0;
     li {
       margin: 0 .0125rem;
+      @media screen and (max-width: 1024px) {
+        &:first-child {margin-top: 60px;}
+      }
     }
     li a {
       color: $white;
