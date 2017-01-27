@@ -156,7 +156,7 @@ nav, .navigation {
   width: 100%;
   background-color: transparent;
   z-index: 1000;
-  overflow: hidden;
+  /*overflow: hidden;*/
   transition: all .15s;
 
   &.fixed-navbar {
