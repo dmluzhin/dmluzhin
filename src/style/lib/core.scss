@@ -68,3 +68,7 @@ section {
 .nopadding-top {
   padding-top: 0;
 }
+.flex {
+  display: flex !important;
+  transition: all ease .15s;
+}

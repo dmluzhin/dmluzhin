@@ -3,6 +3,7 @@ $(document).ready(function() {
 	/*Hamburger animation toggle*/
 	$('.hamburger').click(function(){
 		$(this).toggleClass('is-active');
+		$(".navigation-list").toggleClass('flex');
 	});
 
 	/*fixed header*/

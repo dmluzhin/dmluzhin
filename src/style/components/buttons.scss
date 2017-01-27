@@ -30,7 +30,7 @@ button, .button {
     }
   }
   @media screen and (max-width: 600px) {
-    margin: 20px auto;
+    margin: 12px auto;
     display: block;
   }
 }
@@ -46,12 +46,9 @@ button, .button {
   padding: 10px;
   transition: $ease-25;
 
-  /*&:hover {
-    background-color: $red-200;
-  }*/
-
   @media screen and (max-width: 1024px) {
     display: block;
+    z-index: 3;
   }
 
   .line {
