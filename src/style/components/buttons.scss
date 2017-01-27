@@ -29,9 +29,10 @@ button, .button {
       background-color: lighten($black-200, 5%);
     }
   }
-  /*@media screen and (max-width: 768px) {
-    margin: 15px 0 0 0;
-  }*/
+  @media screen and (max-width: 600px) {
+    margin: 20px auto;
+    display: block;
+  }
 }
 .hamburger {
   display: none;
