@@ -1,9 +1,16 @@
 $(document).ready(function() {
 
+	var body = $('body');
+	var bodyOverflow = function() {
+		body.toggleClass('overflow-hidden');
+	};
+
 	/*Hamburger animation toggle*/
+
 	$('.hamburger').click(function(){
 		$(this).toggleClass('is-active');
 		$(".navigation-list").toggleClass('flex');
+		bodyOverflow();
 	});
 
 	/*fixed header*/
