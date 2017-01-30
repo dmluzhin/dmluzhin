@@ -35,7 +35,7 @@
       align-items: flex-end;
       overflow: visible;
       flex-grow: 1;
-      @media screen and (max-width: 600px) {
+      @media screen and (max-width: 640px) {
         height: auto;
       }
     }
@@ -54,8 +54,11 @@
         z-index: 4;
       }
 
-      @media screen and (max-width: 600px) {
-        height: 100% !important;
+      @media screen and (max-width: 640px) {
+        border-radius: 0;
+        height: 50px !important;
+        flex-grow: 0;
+        box-shadow: none;
       }
 
       &-count {
@@ -73,6 +76,30 @@
         @extend %regular;
         color: $red;
         font-size: 1.6rem;
+
+        @media screen and (max-width: 640px) {
+          left: auto;
+          right: -50px;
+          bottom: 0;
+          width: 50px;
+          height: 50px;
+          z-index: 2;
+          border-radius: 0;
+          font-size: 1rem;
+          text-align: right;
+          border-left: none;
+          background-color: transparent;
+          box-shadow: none;
+        }
+
+        p {
+          @media screen and (max-width: 640px) {
+            text-align: right;
+            width: 100%;
+            margin: 0;
+            color: black;
+          }
+        }
       }
 
       &-name {
@@ -95,8 +122,24 @@
         height: auto;
         min-height: 50px;
 
+        @media screen and (max-width: 640px) {
+          position: absolute;
+          left: 10px;
+          top: 5px;
+          bottom: 0;
+          width: 40px;
+          height: 40px;
+          min-height: 40px;
+          border-right: 0;
+          overflow: hidden;
+        }
+
         svg {
           fill: $gr100 !important;
+          @media screen and (max-width: 640px) {
+            height: 40px !important;
+            width: auto !important;
+          }
         }
         .gr100-fill {
           fill: $gr100 !important;
@@ -120,6 +163,9 @@
           fill: transparent !important;
         }
       }
+
+
+
     }
   }
 
@@ -129,11 +175,15 @@
     align-items: flex-end;
     flex-grow: 1;
     transition: $transition-15ms;
+    margin-bottom: $main-step;
 
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 640px) {
       width: 100%;
-      height: 200px;
-      margin-bottom: 80px;
+      height: 54px;
+      border-radius: 1px;
+      border: 2px solid $red-200;
+      overflow: visible;
+      margin-right: 50px;
     }
     &:hover {
       flex-grow: 2;
@@ -158,6 +208,10 @@
     transition: $transition-15ms;
     padding: $standart-box-padding;
     overflow: hidden;
+
+    @media screen and (max-width: 450px) {
+      padding: $standart-box-padding 0;
+    }
   }
 
   &-item {
@@ -214,6 +268,41 @@
       height: auto;
       display: block;
       margin: 0 auto;
+      @media screen and (max-width: 450px) {
+        max-width: 65%;
+      }
+    }
+
+    @media screen and (max-width: 640px) {
+      width: 50%;
+      border: 1px solid $gr500;
+      border-bottom: none;
+      border-right: none;
+      border-left: none;
+      &:first-child {
+        border-top: none;
+      }
+      &:nth-child(2) {
+        border-top: none;
+      }
+      &:nth-child(-n+3) {
+        border-bottom: none;
+      }
+      &:nth-child(-n+1) {
+        border-right: none;
+      }
+      &:nth-child(2n) {
+        border-left: 1px solid $gr500;
+      }
+    }
+
+    @media screen and (max-width: 450px) {
+      width: 100%;
+      border: 1px solid $gr500 !important;
+      border-bottom: none !important;
+      &:last-child {
+        border-bottom: 1px solid $gr500 !important;;
+      }
     }
   }
 }
@@ -582,6 +671,28 @@
     }
   }
 }
+
+.preloader {
+  display: block;
+  position: fixed;
+  left: 0; right: 0;
+  top: 0; bottom: 0;
+  margin: auto;
+  background-color: rgba(255, 255, 255, .99);
+  z-index: 100;
+
+  .spinner {
+    position: absolute;
+    left: 0; right: 0;
+    top: 0; bottom: 0;
+    width: 50px; height: 50px;
+    background: $red;
+    border-radius: 100%;
+    margin: auto;
+    animation: blink 1s infinite ease-in-out;
+    animation-direction: alternate;
+  }
+}
 @keyframes circle-scale {
   0% {
     transform: scale(1.0);
@@ -590,7 +701,11 @@
     transform: scale(1.1);
   }
 }
-
+@keyframes blink {
+  from {opacity: 1;}
+  50% {opacity: .5;}
+  to {opacity: 1}
+}
 .nopadding {
   padding: 0;
 }

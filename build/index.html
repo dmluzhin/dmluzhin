@@ -8,6 +8,9 @@
 	<link href="css/font-awesome.css" rel="stylesheet">
 </head>
 <body>
+<div class="preloader" id="preloader">
+	<span class="spinner"></span>
+</div>
 <header id="first" class="header flex flex-center">
 	<nav class="navigation navbar">
 		<div class="container flex-row flex-center flex-space-between">
@@ -49,26 +52,34 @@
 	<div class="container">
 		<h4>Навыки</h4>
 
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquid aut, blanditiis debitis delectus, dolorum eius eligendi explicabo facilis fuga harum officia provident quam quasi quia quibusdam tenetur ullam ut.</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquid aut, blanditiis debitis delectus,
+			dolorum eius eligendi explicabo facilis fuga harum officia provident quam quasi quia quibusdam tenetur ullam
+			ut.</p>
 	</div>
 	<div class="stats-container">
 		<div class="row  flex-row">
 			<div class="stats-box flex-row">
 				<div class="stat h95 flex-center flex-column">
 					<div class="stat-img flex-row flex-center">
-						<svg width="58px" height="120px" viewBox="0 0 256 192" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid">
-							<g>
-								<path d="M255.554813,70.7657143 L232.31367,331.125451 L127.843868,360.087912 L23.6617143,331.166242 L0.445186813,70.7657143 L255.554813,70.7657143 L255.554813,70.7657143 Z" class="gr100-fill"></path>
-								<path d="M128,337.950242 L212.416703,314.546637 L232.277802,92.0573187 L128,92.0573187 L128,337.950242 L128,337.950242 Z" class="gr100-fill"></path>
-								<path d="M82.8202198,155.932132 L128,155.932132 L128,123.994725 L47.917011,123.994725 L48.6814945,132.562989 L56.530989,220.572835 L128,220.572835 L128,188.636132 L85.7389011,188.636132 L82.8202198,155.932132 L82.8202198,155.932132 Z" class="red-fill"></path>
-								<path d="M90.0177582,236.54189 L57.957978,236.54189 L62.4323516,286.687648 L127.853011,304.848879 L128,304.808088 L128,271.580132 L127.860044,271.617407 L92.2915165,262.013187 L90.0177582,236.54189 L90.0177582,236.54189 Z" class="red-fill"></path>
-								<path d="M24.1807473,0 L40.4107253,0 L40.4107253,16.0351648 L55.2573187,16.0351648 L55.2573187,0 L71.488,0 L71.488,48.5584176 L55.258022,48.5584176 L55.258022,32.2981978 L40.4114286,32.2981978 L40.4114286,48.5584176 L24.1814505,48.5584176 L24.1814505,0 L24.1807473,0 L24.1807473,0 Z" class="gr400-fill"></path>
-								<path d="M92.8309451,16.1026813 L78.5427692,16.1026813 L78.5427692,0 L123.356835,0 L123.356835,16.1026813 L109.06233,16.1026813 L109.06233,48.5584176 L92.8316484,48.5584176 L92.8316484,16.1026813 L92.8309451,16.1026813 L92.8309451,16.1026813 Z" class="gr400-fill"></path>
-								<path d="M130.469275,0 L147.392703,0 L157.802901,17.061978 L168.202549,0 L185.132308,0 L185.132308,48.5584176 L168.969143,48.5584176 L168.969143,24.4901978 L157.802901,41.7554286 L157.523692,41.7554286 L146.349714,24.4901978 L146.349714,48.5584176 L130.469275,48.5584176 L130.469275,0 L130.469275,0 Z" class="gr400-fill"></path>
-								<path d="M193.20967,0 L209.444571,0 L209.444571,32.5077802 L232.268659,32.5077802 L232.268659,48.5584176 L193.20967,48.5584176 L193.20967,0 L193.20967,0 Z" class="gr400-fill"></path>
-								<path d="M127.889582,220.572835 L167.216527,220.572835 L163.509451,261.992791 L127.889582,271.606857 L127.889582,304.833407 L193.362286,286.687648 L193.842637,281.291956 L201.347516,197.212132 L202.126769,188.636132 L127.889582,188.636132 L127.889582,220.572835 L127.889582,220.572835 Z" class="red-fill"></path>
-								<path d="M127.889582,155.854066 L127.889582,155.932132 L205.032791,155.932132 L205.673495,148.753582 L207.128615,132.562989 L207.892396,123.994725 L127.889582,123.994725 L127.889582,155.854066 L127.889582,155.854066 Z" class="red-fill"></path>
-							</g>
+						<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 						width="80px" height="80px" viewBox="0 0 40 40" enable-background="new 0 0 40 40" xml:space="preserve">
+						<g>
+							<path d="M34,7.908l-2.578,28.88L19.834,40L8.277,36.792L5.703,7.908H34L34,7.908z" class="gr100-fill"/>
+							<path d="M19.852,37.545l9.362-2.597l2.204-24.678H19.852V37.545L19.852,37.545z" class="gr100-fill"/>
+							<path d="M14.84,17.355h5.012v-3.542h-8.883l0.084,0.95l0.871,9.763h7.928v-3.543h-4.688L14.84,17.355L14.84,17.355z
+								" class="red-fill"/>
+							<path d="M15.639,26.296h-3.557l0.496,5.562l7.256,2.016l0.018-0.004v-3.687l-0.016,0.004l-3.945-1.065
+								L15.639,26.296L15.639,26.296z" class="red-fill"/>
+							<path d="M8.336,0.059h1.8v1.779h1.647V0.059h1.8v5.386h-1.8V3.642h-1.647v1.803h-1.8V0.059L8.336,0.059L8.336,0.059
+								z" class="gr400-fill"/>
+							<path d="M15.949,1.845h-1.584V0.059h4.971v1.786H17.75v3.6h-1.8L15.949,1.845L15.949,1.845L15.949,1.845z"class="gr400-fill"/>
+							<path d="M20.125,0.059h1.877l1.155,1.893l1.153-1.893h1.878v5.386h-1.793V2.775L23.157,4.69h-0.031l-1.24-1.915
+								v2.669h-1.761V0.059L20.125,0.059z"class="gr400-fill"/>
+							<path d="M27.085,0.059h1.8v3.606h2.532v1.78h-4.332V0.059L27.085,0.059z"/>
+							<path d="M19.839,24.525h4.362l-0.411,4.594l-3.951,1.066v3.686l7.263-2.014l0.053-0.598l0.832-9.326l0.087-0.951
+								h-8.234V24.525L19.839,24.525z" class="red-fill"/>
+							<path d="M19.839,17.346v0.009h8.556l0.072-0.796l0.161-1.796l0.084-0.95h-8.873V17.346L19.839,17.346z" class="red-fill"/>
+						</g>
 						</svg>
 					</div>
 				</div>
@@ -112,9 +123,9 @@
 					<div class="stat-img flex-row flex-center">
 						<svg width="58px" height="58px" viewBox="0 0 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid">
 							<g>
-								<path d="M0,0 L256,0 L256,256 L0,256 L0,0 Z" class="transparent-fill"></path>
-								<path d="M67.311746,213.932292 L86.902654,202.076241 C90.6821079,208.777346 94.1202286,214.447137 102.367086,214.447137 C110.272203,214.447137 115.256076,211.354819 115.256076,199.326883 L115.256076,117.528787 L139.313575,117.528787 L139.313575,199.666997 C139.313575,224.58433 124.707759,235.925943 103.3984,235.925943 C84.1532952,235.925943 72.9819429,225.958603 67.3113397,213.93026" class="gr100-fill"></path>
-								<path d="M152.380952,211.354413 L171.969422,200.0128 C177.125994,208.433981 183.827911,214.619835 195.684368,214.619835 C205.652521,214.619835 212.009041,209.635962 212.009041,202.762159 C212.009041,194.513676 205.479416,191.592025 194.481168,186.78207 L188.468419,184.202565 C171.111213,176.81473 159.597308,167.53534 159.597308,147.944838 C159.597308,129.901308 173.344508,116.153295 194.825752,116.153295 C210.119924,116.153295 221.117765,121.48094 229.021663,135.400432 L210.29059,147.428775 C206.166146,140.040127 201.699556,137.119289 194.826159,137.119289 C187.78047,137.119289 183.312254,141.587098 183.312254,147.428775 C183.312254,154.646349 187.78047,157.568406 198.089956,162.036622 L204.103924,164.614095 C224.553448,173.378641 236.067352,182.313448 236.067352,202.418387 C236.067352,224.071924 219.055137,235.927975 196.200432,235.927975 C173.860978,235.927975 159.425829,225.274311 152.381359,211.354413" class="gr100-fill"></path>
+								<path d="M0,0 L256,0 L256,256 L0,256 L0,0 Z" class="gr100-fill"></path>
+								<path d="M67.311746,213.932292 L86.902654,202.076241 C90.6821079,208.777346 94.1202286,214.447137 102.367086,214.447137 C110.272203,214.447137 115.256076,211.354819 115.256076,199.326883 L115.256076,117.528787 L139.313575,117.528787 L139.313575,199.666997 C139.313575,224.58433 124.707759,235.925943 103.3984,235.925943 C84.1532952,235.925943 72.9819429,225.958603 67.3113397,213.93026" class="red-fill"></path>
+								<path d="M152.380952,211.354413 L171.969422,200.0128 C177.125994,208.433981 183.827911,214.619835 195.684368,214.619835 C205.652521,214.619835 212.009041,209.635962 212.009041,202.762159 C212.009041,194.513676 205.479416,191.592025 194.481168,186.78207 L188.468419,184.202565 C171.111213,176.81473 159.597308,167.53534 159.597308,147.944838 C159.597308,129.901308 173.344508,116.153295 194.825752,116.153295 C210.119924,116.153295 221.117765,121.48094 229.021663,135.400432 L210.29059,147.428775 C206.166146,140.040127 201.699556,137.119289 194.826159,137.119289 C187.78047,137.119289 183.312254,141.587098 183.312254,147.428775 C183.312254,154.646349 187.78047,157.568406 198.089956,162.036622 L204.103924,164.614095 C224.553448,173.378641 236.067352,182.313448 236.067352,202.418387 C236.067352,224.071924 219.055137,235.927975 196.200432,235.927975 C173.860978,235.927975 159.425829,225.274311 152.381359,211.354413" class="red-fill"></path>
 							</g>
 						</svg>
 
@@ -155,7 +166,7 @@
 			</div>
 
 			<div class="stats-box flex-row">
-				<div class="stat h95 flex-center flex-column">
+				<div class="stat h25 flex-center flex-column">
 					<div class="stat-img flex-row flex-center">
 						<svg width="256px" height="272px" viewBox="0 0 256 272" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid">
 							<g>
@@ -223,8 +234,11 @@
 								<span>2009 - 2014</span>
 							</div>
 							<div class="columns eight">
-								<p><strong>Национальный исследовательский технологический университет "МИСиС" (Московский институт стали и сплавов), Москва</strong></p>
+								<p><strong>Национальный исследовательский технологический университет "МИСиС" (Московский институт стали
+									и сплавов), Москва</strong></p>
+
 								<p><strong>Факультет:</strong> Автоматизации и информатики</p>
+
 								<p><strong>Специальность:</strong> Инженер-программист</p>
 							</div>
 						</div>
@@ -236,6 +250,7 @@
 							</div>
 							<div class="eight columns">
 								<p><strong>Балашиха, МОУ СОШ №22 '09</strong></p>
+
 								<p><strong>Класс:</strong> Экономико-Математический профильный класс</p>
 							</div>
 						</div>
@@ -256,8 +271,12 @@
 							</div>
 							<div class="eight columns">
 								<p><strong>HTML-верстальщик|UX/UI Дизайнер|JS/jQuery разработчик</strong></p>
+
 								<p>Академия-Медиа</p>
-								<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aperiam aut, beatae distinctio doloribus eum excepturi, magnam mollitia non numquam quasi, suscipit. Debitis dicta, eaque harum iusto odit quaerat voluptas! </p>
+
+								<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aperiam aut, beatae distinctio
+									doloribus eum excepturi, magnam mollitia non numquam quasi, suscipit. Debitis dicta, eaque harum iusto
+									odit quaerat voluptas! </p>
 							</div>
 						</div>
 
@@ -267,8 +286,12 @@
 							</div>
 							<div class="eight columns">
 								<p><strong>HTML-верстальщик|UX/UI Дизайнер|JS/jQuery разработчик</strong></p>
+
 								<p>Академия-Медиа</p>
-								<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aperiam aut, beatae distinctio doloribus eum excepturi, magnam mollitia non numquam quasi, suscipit. Debitis dicta, eaque harum iusto odit quaerat voluptas! </p>
+
+								<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aperiam aut, beatae distinctio
+									doloribus eum excepturi, magnam mollitia non numquam quasi, suscipit. Debitis dicta, eaque harum iusto
+									odit quaerat voluptas! </p>
 							</div>
 						</div>
 
@@ -278,8 +301,12 @@
 							</div>
 							<div class="eight columns">
 								<p><strong>HTML-верстальщик|UX/UI Дизайнер|JS/jQuery разработчик</strong></p>
+
 								<p>Академия-Медиа</p>
-								<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aperiam aut, beatae distinctio doloribus eum excepturi, magnam mollitia non numquam quasi, suscipit. Debitis dicta, eaque harum iusto odit quaerat voluptas! </p>
+
+								<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aperiam aut, beatae distinctio
+									doloribus eum excepturi, magnam mollitia non numquam quasi, suscipit. Debitis dicta, eaque harum iusto
+									odit quaerat voluptas! </p>
 							</div>
 						</div>
 					</div>
@@ -339,7 +366,10 @@
 					<blockquote class="blockquote-text">
 						<h1 class="round-avatar-sign">Данила Лужин</h1>
 						<span class="round-avatar-profile">Web Developer|UI/UX</span>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur atque cupiditate laborum mollitia nemo quo repellat? Assumenda consectetur, consequatur eaque facere magni minima neque nihil, nisi quaerat quibusdam ratione voluptatibus!</p>
+
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur atque cupiditate laborum mollitia
+							nemo quo repellat? Assumenda consectetur, consequatur eaque facere magni minima neque nihil, nisi quaerat
+							quibusdam ratione voluptatibus!</p>
 					</blockquote>
 				</div>
 				<div class="blog-item">
@@ -349,7 +379,10 @@
 					<blockquote class="blockquote-text">
 						<h1 class="round-avatar-sign">Богдан Блинников</h1>
 						<span class="round-avatar-profile">Web Developer|JS/Angular</span>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque beatae blanditiis, consequatur eum laboriosam modi molestias neque officia quaerat voluptatem. Eaque et, nemo. A incidunt nobis ratione sed ullam, voluptatum?</p>
+
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque beatae blanditiis, consequatur eum
+							laboriosam modi molestias neque officia quaerat voluptatem. Eaque et, nemo. A incidunt nobis ratione sed
+							ullam, voluptatum?</p>
 					</blockquote>
 				</div>
 				<div class="blog-item">
@@ -359,7 +392,10 @@
 					<blockquote class="blockquote-text">
 						<h1 class="round-avatar-sign">Виталий Казуров</h1>
 						<span class="round-avatar-profile">Web Developer|JS/Python</span>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aut autem cum debitis dolor dolores, dolorum ducimus esse fugiat iusto laboriosam molestias, nesciunt nobis nostrum possimus quia quibusdam repellat reprehenderit.</p>
+
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aut autem cum debitis dolor dolores, dolorum
+							ducimus esse fugiat iusto laboriosam molestias, nesciunt nobis nostrum possimus quia quibusdam repellat
+							reprehenderit.</p>
 					</blockquote>
 				</div>
 			</div>
@@ -373,14 +409,20 @@
 				<div class="divider">
 					<i class="fa fa-code fa-4x" aria-hidden="true"></i>
 					<h6>Веб Разработка</h6>
-					<p class="align-center"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, consequuntur cumque dolore enim et ex itaque laboriosam molestias nam optio pariatur, porro quaerat quo, rem sunt totam vel voluptates. Dolores!</p>
+
+					<p class="align-center"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, consequuntur
+						cumque dolore enim et ex itaque laboriosam molestias nam optio pariatur, porro quaerat quo, rem sunt totam
+						vel voluptates. Dolores!</p>
 				</div>
 			</div>
 			<div class="one-third column">
 				<div class="divider">
 					<i class="fa fa-laptop fa-4x" aria-hidden="true"></i>
 					<h6>Веб Дизайн</h6>
-					<p class="align-center"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, consequuntur cumque dolore enim et ex itaque laboriosam molestias nam optio pariatur, porro quaerat quo, rem sunt totam vel voluptates. Dolores!</p>
+
+					<p class="align-center"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, consequuntur
+						cumque dolore enim et ex itaque laboriosam molestias nam optio pariatur, porro quaerat quo, rem sunt totam
+						vel voluptates. Dolores!</p>
 				</div>
 			</div>
 
@@ -388,7 +430,10 @@
 				<div class="divider">
 					<i class="fa fa-mobile-phone fa-4x" aria-hidden="true"></i>
 					<h6>Мобильные приложения</h6>
-					<p class="align-center"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, consequuntur cumque dolore enim et ex itaque laboriosam molestias nam optio pariatur, porro quaerat quo, rem sunt totam vel voluptates. Dolores!</p>
+
+					<p class="align-center"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, consequuntur
+						cumque dolore enim et ex itaque laboriosam molestias nam optio pariatur, porro quaerat quo, rem sunt totam
+						vel voluptates. Dolores!</p>
 				</div>
 			</div>
 		</div>
@@ -398,21 +443,30 @@
 				<div class="divider">
 					<i class="fa fa-rebel fa-4x" aria-hidden="true"></i>
 					<h6>Кино</h6>
-					<p class="align-center"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, consequuntur cumque dolore enim et ex itaque laboriosam molestias nam optio pariatur, porro quaerat quo, rem sunt totam vel voluptates. Dolores!</p>
+
+					<p class="align-center"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, consequuntur
+						cumque dolore enim et ex itaque laboriosam molestias nam optio pariatur, porro quaerat quo, rem sunt totam
+						vel voluptates. Dolores!</p>
 				</div>
 			</div>
 			<div class="one-third column">
 				<div class="divider">
 					<i class="fa fa-bicycle fa-4x" aria-hidden="true"></i>
 					<h6>Велосипед</h6>
-					<p class="align-center"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, consequuntur cumque dolore enim et ex itaque laboriosam molestias nam optio pariatur, porro quaerat quo, rem sunt totam vel voluptates. Dolores!</p>
+
+					<p class="align-center"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, consequuntur
+						cumque dolore enim et ex itaque laboriosam molestias nam optio pariatur, porro quaerat quo, rem sunt totam
+						vel voluptates. Dolores!</p>
 				</div>
 			</div>
 			<div class="one-third column">
 				<div class="divider">
 					<i class="fa fa-camera fa-4x" aria-hidden="true"></i>
 					<h6>Фотография</h6>
-					<p class="align-center"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, consequuntur cumque dolore enim et ex itaque laboriosam molestias nam optio pariatur, porro quaerat quo, rem sunt totam vel voluptates. Dolores!</p>
+
+					<p class="align-center"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, consequuntur
+						cumque dolore enim et ex itaque laboriosam molestias nam optio pariatur, porro quaerat quo, rem sunt totam
+						vel voluptates. Dolores!</p>
 				</div>
 			</div>
 		</div>

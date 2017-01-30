@@ -1,9 +1,15 @@
 $(document).ready(function() {
-
 	var body = $('body');
 	var bodyOverflow = function() {
 		body.toggleClass('overflow-hidden');
 	};
+
+	$(window).on('load', function(){
+		var preloader = $('#preloader');
+		var spinner = preloader.find('.spinner');
+
+		preloader.delay(500).fadeOut('fast');
+	});
 
 	/*Hamburger animation toggle*/
 
