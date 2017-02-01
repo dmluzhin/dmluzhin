@@ -49,6 +49,22 @@ $(document).ready(function() {
 		dots: true
 	});
 
+	/*Сортировка*/
+
+	var btns = $('.type').click(function() {
+		if(this.id == 'all') {
+			$('#shuffler > a').fadeIn('fast');
+		} else {
+			var el = $('.' + this.id).fadeIn('fast');
+			$('#shuffler > a').not(el).hide();
+		}
+
+		btns.removeClass('active');
+		$(this).addClass('active');
+	});
+
+
+
 	$('.accordion-ctrl').click(function(){
 		if($(this).hasClass('active')){
 			$(this).removeClass('active');

@@ -1,0 +1,36 @@
+/*colors*/
+
+.red {
+  &-full          {background-color: $red; color: $red; border-color: $red;}
+  &-color         {color: $red;}
+  &-background    {background-color: $red;}
+  &-border        {border-color: $red;}
+}
+
+.blue {
+  &-full          {background-color: $blue; color: $blue; border-color: $blue;}
+  &-color         {color: $blue;}
+  &-background    {background-color: $blue;}
+  &-border        {border-color: $blue;}
+}
+
+.white {
+  &-full          {background-color: $white; color: $white; border-color: $white;}
+  &-color         {color: $white;}
+  &-background    {background-color: $white;}
+  &-border        {border-color: $white;}
+}
+
+.burgundi {
+  &-full          {background-color: $burgundi; color: $burgundi; border-color: $burgundi;}
+  &-color         {color: $burgundi;}
+  &-background    {background-color: $burgundi;}
+  &-border        {border-color: $burgundi;}
+}
+
+.gold {
+  &-full          {background-color: $gold; color: $gold; border-color: $gold;}
+  &-color         {color: $gold;}
+  &-background    {background-color: $gold;}
+  &-border        {border-color: $gold;}
+}

@@ -204,7 +204,6 @@
     align-content: stretch;
     width: 100%;
     min-height: 300px;
-    background-color: $gr100;
     transition: $transition-15ms;
     padding: $standart-box-padding;
     overflow: hidden;
@@ -215,17 +214,13 @@
   }
 
   &-item {
-    width: 33.3%;
-    border-right: 1px solid #CCCCCC;
+    width: calc(33.3% - 24px);
+    margin: 12px;
     position: relative;
     box-sizing: border-box;
     transition: $transition-15ms;
-    &:nth-child(3n) {
-      border-right: none;
-    }
-    &:nth-child(-n+3) {
-      border-bottom: 1px solid #CCCCCC;
-    }
+    border-radius: $radius-dp-1;
+    overflow: hidden;
     &:before, &:after {
       content: '';
       position: absolute;
@@ -268,45 +263,81 @@
       height: auto;
       display: block;
       margin: 0 auto;
-      @media screen and (max-width: 450px) {
-        max-width: 65%;
-      }
     }
 
     @media screen and (max-width: 640px) {
-      width: 50%;
-      border: 1px solid $gr500;
-      border-bottom: none;
-      border-right: none;
-      border-left: none;
-      &:first-child {
-        border-top: none;
-      }
-      &:nth-child(2) {
-        border-top: none;
-      }
-      &:nth-child(-n+3) {
-        border-bottom: none;
-      }
-      &:nth-child(-n+1) {
-        border-right: none;
-      }
-      &:nth-child(2n) {
-        border-left: 1px solid $gr500;
+      width: calc(50% - 24px);
+    }
+    &.white-border {
+      border-color: inherit;
+      &:before, &:after {
+        border-color: $white !important;
       }
     }
-
-    @media screen and (max-width: 450px) {
-      width: 100%;
-      border: 1px solid $gr500 !important;
-      border-bottom: none !important;
-      &:last-child {
-        border-bottom: 1px solid $gr500 !important;;
+    &.gold-border {
+      border-color: inherit;
+      &:before, &:after {
+        border-color: $gold !important;
+      }
+    }
+    &.blue-border {
+      border-color: inherit;
+      &:before, &:after {
+        border-color: $blue !important;
+      }
+    }
+    &.burgundi-border {
+      border-color: inherit;
+      &:before, &:after {
+        border-color: $burgundi !important;
       }
     }
   }
 }
+.filter-nav {
+  margin-bottom: $big-step;
+  padding-bottom: $standart-box-padding;
+  text-align: center;
+}
+.filter {
+  display: inline-block;
+  text-align: center;
+  margin: 0;
+  padding: $standart-box-padding;
+  vertical-align: top;
 
+  li {
+    display: inline-block;
+  }
+  a {
+    color: $blue;
+    box-shadow: none;
+    background-color: transparent;
+    padding: 12px 24px;
+    font-size: .925rem;
+    text-transform: uppercase;
+    @extend %regular;
+    transition: $transition-15ms;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $blue-200;
+      border-radius: $radius-dp-1;
+      box-shadow: $shadow-dp3;
+      color: $white;
+    }
+    &:active {
+      box-shadow: $shadow-dp1;
+    }
+  }
+
+  a.active  {
+    background-color: $blue-200;
+    border-radius: $radius-dp-1;
+    color: $white;
+    box-shadow: $shadow-dp1;
+  }
+}
 .jumbotron {
   position: relative;
   width: 100%;
