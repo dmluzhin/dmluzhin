@@ -274,6 +274,7 @@
         border-color: $white !important;
       }
     }
+
     &.gold-border {
       border-color: inherit;
       &:before, &:after {
@@ -303,11 +304,18 @@
   display: inline-block;
   text-align: center;
   margin: 0;
-  padding: $standart-box-padding;
+  padding: $standart-box-padding 0;
   vertical-align: top;
+  @media screen and (max-width: 450px) {
+    padding: 14px 0;
+  }
 
   li {
     display: inline-block;
+    @media screen and (max-width: 450px) {
+      display: block;
+      margin: 8px 0
+    }
   }
   a {
     color: $blue;
@@ -328,6 +336,10 @@
     }
     &:active {
       box-shadow: $shadow-dp1;
+    }
+    @media screen and (max-width: 450px) {
+      display: block;
+      margin: 8px 0
     }
   }
 
@@ -463,6 +475,9 @@
   padding: $standart-box-padding;
   box-shadow: $shadow-dp1;
   border-radius: $radius-dp-1;
+  @media screen and (max-width: 640px) {
+    padding: 24px 12px;
+  }
 }
 
 .accordion {
