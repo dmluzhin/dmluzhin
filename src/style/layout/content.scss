@@ -656,6 +656,63 @@
 }
 
 
+.tree {
+
+  &-top {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+    background-color: $red;
+    color: $white;
+    width: 300px;
+    padding: $standart-box-padding;
+    box-shadow: $shadow-dp1;
+    border-radius: $radius-dp-1;
+    text-transform: uppercase;
+    font-family: "RalewayRegular", Helvetica, sans-serif;
+    font-weight: 200;
+    margin-bottom: 32px;
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -32px;
+      margin: auto;
+      width: 1px;
+      height: 32px;
+      background-color: $red;
+    }
+  }
+}
+
+.flip-card {
+  width: 100%;
+  box-shadow: $shadow-dp1;
+  border-radius: $radius-dp-2;
+  overflow: hidden;
+
+  &-header {
+    width: 100%;
+    color: white;
+    background-color: $red;
+    margin: 0 auto;
+    font-family: "RalewayRegular", Helvetica, sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    padding: 16px;
+    font-size: 1.265rem;
+    margin-bottom: 16px;
+  }
+  &-content {
+    width: 100%;
+    min-height: 50px;
+    padding: 0 16px 16px 16px;
+  }
+}
+
 .focused {
   .form-control {
     outline: none;
@@ -738,6 +795,7 @@
     animation: blink 1s infinite ease-in-out;
     animation-direction: alternate;
   }
+
 }
 @keyframes circle-scale {
   0% {
