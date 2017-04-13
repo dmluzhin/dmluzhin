@@ -813,3 +813,11 @@
 .nopadding {
   padding: 0;
 }
+
+.cl1:hover > .ninja {
+  display: block;
+}
+
+.ninja {
+  display: none;
+}
