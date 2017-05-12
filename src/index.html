@@ -5,43 +5,7 @@
 <div class="preloader" id="preloader">
 	<span class="spinner"></span>
 </div>
-<header id="first" class="header flex flex-center">
-	<nav class="navigation navbar">
-		<div class="container flex-row flex-center flex-space-between">
-			<div class="hamburger">
-				<div class="line"></div>
-				<div class="line"></div>
-				<div class="line"></div>
-			</div>
-			<a href="#" class="logo">Luzhin <span></span><span></span></a>
-			<ul class="navigation-list">
-				<li><a class="active" href="#first">Главная</a></li>
-				<li><a href="#two">Навыки</a></li>
-				<li><a href="#three">Портфолио</a></li>
-				<li><a href="#six">Резюме</a></li>
-				<li><a href="#one">Обо мне</a></li>
-				<li><a href="#four">Блог</a></li>
-				<li><a href="#seven">Контакты</a></li>
-			</ul>
-		</div>
-	</nav>
-	<div class="container card flex-column flex-center">
-		<div class="round-avatar">
-			<img src="images/png/avatar-luzhin.png"/>
-		</div>
-		<h1 class="round-avatar-sign">Данила Лужин</h1>
-		<span class="round-avatar-profile">Web - разработчик | UI&thinsp;/&thinsp;UX - дизайнер</span>
-		<span class="round-avatar-profile">HTML - Верстальщик | JavaScript&thinsp;/&thinsp;jQuery - программист</span>
-		<span class="round-avatar-profile">CMS WordPress специалист | Joomla | Concrete5</span>
-		<span class="round-avatar-profile"></span>
-		<span class="round-avatar-works">21 работа</span>
-
-		<div class="navigation round-avatar-buttons flex-row flex-center">
-			<a href="#three" class="button">Портфолио</a>
-			<a href="#six" class="button secondary">Резюме</a>
-		</div>
-	</div>
-</header>
+//= templates/blocks/header.html
 <section class="bg-primary" id="two">
 	<div class="container">
 		<h5 class="tree-top">Верстка</h5>
@@ -212,22 +176,22 @@
 				</ul>
 			</nav>
 			<div id="shuffler" class="portfolio-container">
-				<a href="#" class="portfolio-item white-border sites">
-					<img src="images/png/brands/kre.png"/>
+				<a href="https://dmluzhin.github.io/rocket-test/build/" target="_blank" class="portfolio-item white-border sites">
+					<img src="images/png/brands/roket.png"/>
 				</a>
-				<a href="#" class="portfolio-item gold-border sites">
+				<a href="http://dystopia.me/" target="_blank" class="portfolio-item gold-border sites">
 					<img src="images/png/brands/dystopia.png"/>
 				</a>
-				<a href="#" class="portfolio-item white-border design">
+				<a href="/group.html" class="portfolio-item white-border sites">
+					<img src="images/png/brands/kre.png"/>
+				</a>
+				<a href="http://prof.academia-moscow.ru/professions" target="_blank" class="portfolio-item white-border design">
 					<img src="images/png/brands/mintrud.png"/>
 				</a>
-				<a href="#" class="portfolio-item burgundi-border design">
+				<a href="http://pilot.i-gvs.com" target="_blank" class="portfolio-item burgundi-border design">
 					<img src="images/png/brands/gvs.png"/>
 				</a>
-				<a href="#" class="portfolio-item white-border sites">
-					<img src="images/png/brands/moscowine.png"/>
-				</a>
-				<a href="#" class="portfolio-item burgundi-border design">
+				<a href="http://pilot.i-gvs.com/shellserver?id=143&module_id=454749#454749" target="_blank" class="portfolio-item burgundi-border design">
 					<img src="images/png/brands/modules.png"/>
 				</a>
 			</div>
@@ -294,28 +258,27 @@
 								<span>Сен. 2014 - по настоящее время</span>
 							</div>
 							<div class="eight columns">
-								<p><strong>HTML-верстальщик|UX/UI Дизайнер|JS/jQuery разработчик</strong></p>
-
-								<p>Академия-Медиа</p>
-
-								<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aperiam aut, beatae distinctio
-									doloribus eum excepturi, magnam mollitia non numquam quasi, suscipit. Debitis dicta, eaque harum iusto
-									odit quaerat voluptas! </p>
+								<p><strong>HTML-верстальщик | UX/UI Дизайнер</strong></p>
+								<p>Академия-Медиа (Издательский Центр Академия)</p>
+								<p><a href="http://www.academia-moscow.ru/">Сайт компании</a></p>
+								<p>Разработка обучающих модулей средствами для различных платформ HTML, SASS, Jquery, Json, JavaScript. Сборка модулей через Gulp. Проектирование и разработка адаптивных сайтов. Работа с иностранными клиентами (i-GVS.com).</p>
 							</div>
 						</div>
 
 						<div class="row">
 							<div class="four columns">
-								<span>Сен. 2014 - по настоящее время</span>
+								<span>Июль. 2013 - Сентябрь 2014</span>
 							</div>
 							<div class="eight columns">
-								<p><strong>HTML-верстальщик|UX/UI Дизайнер|JS/jQuery разработчик</strong></p>
+								<p><strong>HTML-верстальщик | UX/UI Дизайнер</strong></p>
 
-								<p>Академия-Медиа</p>
-
-								<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aperiam aut, beatae distinctio
-									doloribus eum excepturi, magnam mollitia non numquam quasi, suscipit. Debitis dicta, eaque harum iusto
-									odit quaerat voluptas! </p>
+								<p>Cтудия Aasquare Advertising Agency</p>
+								<p><a class="relative" href="http://aasquare.ru/">Сайт компании <span class="dead-flag">мертв</span></a></p>
+								<p>Разработка дизайна и интерфейса сайтов по требованиям заказчика.
+									Верстка сайта по разработанному и утвержденному дизайну.
+									Натяжение сайтов на движки и дальнейшее размещение в сети интернет.
+									Отладка и сайтов.
+									Наполнение и поддержка сайтов.</p>
 							</div>
 						</div>
 
